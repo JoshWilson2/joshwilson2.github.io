@@ -61,8 +61,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1>Breast Cancer Rates in New York State</h1>
+        <p>Breast cancer rates vary widely throughout the state. Albany had the highest incidendts, according to the National Cancer Society.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
@@ -73,7 +73,25 @@
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;
+          /** choropleth visualization */
+
+#counties_shoreline_merge{
+  polygon-fill: #FFEDA0;
+  polygon-opacity: 0.8;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 1;
+}
+#counties_shoreline_merge [ rate_adjusted <= 173.3] {
+   polygon-fill: #F03B20;
+}
+#counties_shoreline_merge [ rate_adjusted <= 148.5666666666666] {
+   polygon-fill: #FEB24C;
+}
+#counties_shoreline_merge [ rate_adjusted <= 123.83333333333329] {
+   polygon-fill: #FFEDA0;
+}</a></p>
         </div>
         <div class="col-md-4">
           <h2>Heading</h2>
