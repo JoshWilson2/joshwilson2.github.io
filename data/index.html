@@ -14,6 +14,8 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
 
+<link href="http://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" rel="stylesheet"
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -93,7 +95,13 @@
 
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/15LdJHZRY0TRhxAynzKNeEQs4NAxYNQSx-MjTks3Q7U8/pubchart?oid=89685389&amp;format=interactive"></iframe>
 
-<table>
+<script>
+  $(document).ready(function(){
+    $('#teachersalaries').DataTable();
+});
+</script>
+
+<table id="teachersalaries">
   <thead>
     <tr>
       <th class="District-cell">District</th>
